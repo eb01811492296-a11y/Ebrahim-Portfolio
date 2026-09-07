@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ebrahim's Website</title>
+
+    <style>
+        nav {
+    background-color: darkblue;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+        body {
+            text-align: center;
+            background-color: #eef3f8;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        button {
+             
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+}
+
+        #contact {
+    background-color: white;
+    padding: 20px;
+    margin: 30px auto;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px gray;
+        }
+        footer {
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* এখানে নতুন CSS বসবে */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 20px;
+    width: 180px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px gray;
+}
+
+.skill-card h3 {
+    color: darkblue;
+    font-size: 22px;
+}
+
+.skill-card p {
+    font-size: 15px;
+}
+.project-card {
+    .project-card {
+    background-color: white;
+    padding: 25px;
+    width: 250px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px gray;
+}
+}
+
+.project-card h3 {
+    color: darkblue;
+    font-size: 22px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px gray;
+}
+p {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 22px;
+
+}
+.project-card:hover {
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+.cv-button {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.cv-button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+    </style>
+    
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <h1 id="home">Ebrahim</h1>
+
+    <p>Welcome to my personal website!</p>
+
+    <h2 id="about">About Me</h2>
+
+    <p>
+        My name is Ebrahim. I am learning web development.
+        I want to become a web developer.
+    </p>
+
+    <h2 id="skills">My Skills</h2>
+
+    <div class="skills">
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Web page structure</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Website design</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Website functionality</p>
+        </div>
+    </div>
+
+    <h2 id="projects">My Projects</h2>
+
+<div class="projects">
+
+    <div class="project-card">
+        <h3>My Portfolio</h3>
+        <p>My personal portfolio website.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>My First Website</h3>
+        <p>My first HTML and CSS website.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Landing Page</h3>
+        <p>A simple modern landing page.</p>
+    </div>
+
+</div>
+
+    <button onclick="alert('Hello Ebrahim!')">Click Me</button>
+
+    <a href="Ebrahim_CV.pdf" class="cv-button" download>Download CV</a>
+
+    <h2 id="contact">Contact Me</h2>
+
+    <p>Email: <a href="mailto:eb01811492296@icloud.com">eb01811492296@icloud.com</a></p>
+    <p>Phone: <a href="tel:01811492296">01811492296</a></p>
+    <p>Feel free to contact me anytime.</p>
+
+    <footer>
+        <p>&copy; 2026 Ebrahim | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
