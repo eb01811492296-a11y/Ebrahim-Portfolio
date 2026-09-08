@@ -200,6 +200,39 @@ button {
     height: 48px;
     border-radius: 8px;
 }
+button:hover {
+    transform: scale(1.08);
+    transition: 0.3s;
+}
+button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 10px gray;
+}
+form {
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+form button {
+    width: 100%;
+    margin-top: 10px;
+}
 
     </style>
     
@@ -268,10 +301,23 @@ button {
 </div>
 
     <button onclick="alert('Hello Ebrahim!')">Click Me</button>
+    <p id="message"></p>
 
     <a href="Ebrahim_CV.pdf" class="cv-button" download>Download CV</a>
 
     <h2 id="contact">Contact Me</h2>
+
+    <form action="https://formsubmit.co/eb01811492296@icloud.com" method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+    
+        <input type="email" name="email" placeholder="Your Email" required>
+    
+        <textarea name="message" placeholder="Your Message" required></textarea>
+    
+        <button type="submit">Send Message</button>
+    
+    </form>
 
     <p>Email: <a href="mailto:eb01811492296@icloud.com">eb01811492296@icloud.com</a></p>
     <p>Phone: <a href="tel:01811492296">01811492296</a></p>
@@ -280,6 +326,12 @@ button {
     <footer>
         <p>&copy; 2026 Ebrahim | All Rights Reserved</p>
     </footer>
+
+    <script>
+        document.querySelector("button").onclick = function() {
+            document.getElementById("message").innerText = "Thanks for visiting my website!";
+        };
+    </script>
 
 </body>
 
