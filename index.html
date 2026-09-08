@@ -233,7 +233,293 @@ form button {
     width: 100%;
     margin-top: 10px;
 }
+h1 {
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.home-text {
+    color: #333;
+}
+.cv-button {
+    margin-top: 25px;
+}
+#about + p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+.skill-card {
+    background-color: white;
+    padding: 25px;
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px gray;
+    margin: 10px;
+}
+.skill-card {
+    transition: 0.3s;
+}
+.skills {
+    margin-top: 30px;
+}
 
+/* ===== Professional Website Design ===== */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eef3f8;
+    color: #222;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 55px;
+    margin-top: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* About Me */
+
+#about + p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+/* Skills */
+
+.skills {
+    margin-top: 30px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 25px;
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px gray;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Projects */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px gray;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Buttons */
+
+.cv-button {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+
+form {
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+}
+
+/* ===== Professional Navigation ===== */
+
+nav {
+    background-color: darkblue;
+    padding: 18px 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #b8c7ff;
+}
+
+/* ===== Professional Projects ===== */
+
+.project-card {
+    background-color: white;
+    padding: 30px 25px;
+    width: 250px;
+    min-height: 150px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 17px;
+}
+/* ===== Professional Contact Section ===== */
+
+#contact {
+    margin-top: 60px;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+form input,
+form textarea {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border: 2px solid darkblue;
+}
+
+form button {
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: scale(1.03);
+}
+/* ===== Smooth Page Animation ===== */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: fadeUp 0.8s ease;
+}
+
+h2 {
+    animation: fadeUp 0.8s ease;
+}
+
+body > * {
+    animation: fadeUp 0.8s ease;
+}
     </style>
     
 </head>
@@ -245,19 +531,19 @@ form button {
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <h1 id="home">Ebrahim</h1>
 
-    <p>Welcome to my personal website!</p>
+    <p>Welcome to my personal portfolio website</p>
+    <p>I am an HSC student passionate about learning web development.</p>
+    <a href="#contact" class="cv-button">Contact Me</a>
 
     <h2 id="about">About Me</h2>
-
     <p>
-        My name is Ebrahim. I am learning web development.
-        I want to become a web developer.
+        My name is Ebrahim. I am an HSC student and an aspiring web developer.
+        I am passionate about learning HTML, CSS, and JavaScript and building modern websites.
     </p>
 
     <h2 id="skills">My Skills</h2>
