@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>Ebrahim's Website</title>
+    <meta name="description" content="Ebrahim's personal portfolio website. Learn about my skills, projects, and web development journey.">
+
+<meta name="keywords" content="Ebrahim, portfolio, web developer, HTML, CSS, JavaScript">
+
+<meta name="author" content="Ebrahim">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         nav {
@@ -516,9 +524,23 @@ h1 {
 h2 {
     animation: fadeUp 0.8s ease;
 }
+#topBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px gray;
+}
 
-body > * {
-    animation: fadeUp 0.8s ease;
+#topBtn:hover {
+    transform: scale(1.1);
 }
     </style>
     
@@ -546,24 +568,7 @@ body > * {
         I am passionate about learning HTML, CSS, and JavaScript and building modern websites.
     </p>
 
-    <h2 id="skills">My Skills</h2>
-
-    <div class="skills">
-        <div class="skill-card">
-            <h3>HTML</h3>
-            <p>Web page structure</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>CSS</h3>
-            <p>Website design</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>JavaScript</h3>
-            <p>Website functionality</p>
-        </div>
-    </div>
+    <h2 id="projects">My Projects</h2>
 
     <h2 id="projects">My Projects</h2>
 
@@ -572,19 +577,50 @@ body > * {
     <div class="project-card">
         <h3>My Portfolio</h3>
         <p>My personal portfolio website.</p>
+
+        <a href="https://eb01811492296-a11y.github.io/Ebrahim-Portfolio/" 
+           class="cv-button" target="_blank">
+            Live Demo
+        </a>
+
+        <a href="https://github.com/eb01811492296-a11y/Ebrahim-Portfolio" 
+           class="cv-button" target="_blank">
+            GitHub
+        </a>
     </div>
 
     <div class="project-card">
         <h3>My First Website</h3>
-        <p>My first HTML and CSS website.</p>
+        <p>My first website built with HTML and CSS.</p>
+
+        <a href="https://eb01811492296-a11y.github.io/Ebrahim-Portfolio/" 
+           class="cv-button" target="_blank">
+            Live Demo
+        </a>
+
+        <a href="https://github.com/eb01811492296-a11y/Ebrahim-Portfolio" 
+           class="cv-button" target="_blank">
+            GitHub
+        </a>
     </div>
 
     <div class="project-card">
         <h3>Landing Page</h3>
         <p>A simple modern landing page.</p>
+
+        <a href="https://eb01811492296-a11y.github.io/Ebrahim-Portfolio/" 
+           class="cv-button" target="_blank">
+            Live Demo
+        </a>
+
+        <a href="https://github.com/eb01811492296-a11y/Ebrahim-Portfolio" 
+           class="cv-button" target="_blank">
+            GitHub
+        </a>
     </div>
 
 </div>
+
 
     <button onclick="alert('Hello Ebrahim!')">Click Me</button>
     <p id="message"></p>
@@ -618,6 +654,8 @@ body > * {
             document.getElementById("message").innerText = "Thanks for visiting my website!";
         };
     </script>
+
+<a href="#" id="topBtn">&#8593;</a>
 
 </body>
 
